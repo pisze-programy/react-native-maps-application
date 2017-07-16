@@ -2,15 +2,33 @@
 
 exports[`renders correctly 1`] = `
 <View
-  style={Object {}}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "stretch",
+      "bottom": 0,
+      "justifyContent": "flex-end",
+      "left": 0,
+      "margin": 5,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-  >
-    Main Layout
-  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+          "borderColor": "red",
+          "borderWidth": 1,
+        },
+        Object {
+          "backgroundColor": "#eeeeee",
+        },
+      ]
+    }
+  />
 </View>
 `;
