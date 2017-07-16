@@ -3,9 +3,10 @@ import { connect } from "react-redux";
 import { styles } from "../styles.android";
 
 import MapView from "react-native-maps";
-import { TouchableOpacity, View } from "react-native";
+import { View } from "react-native";
 import { bindActionCreators } from "redux";
 import * as drawerActionsCreators from "../actions/drawerActions";
+import BurgerMenuButton from "../components/BurgerMenu";
 
 export class MapLayout extends Component {
   constructor(props) {
@@ -40,9 +41,7 @@ export class MapLayout extends Component {
           initialRegion={this.state.region}/>
 
         <View style={styles.mapOverLayer}>
-          <TouchableOpacity style={styles.mapBurgerButton} onPress={this.showDrawer}>
-            <View />
-          </TouchableOpacity>
+          <BurgerMenuButton onPress={this.showDrawer} />
         </View>
       </View>
     );
