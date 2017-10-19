@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Dimensions, DrawerLayoutAndroid, Text, View } from "react-native";
+import { Dimensions, DrawerLayoutAndroid, View } from "react-native";
 
 import { connect } from "react-redux";
 import { styles } from "../styles.android";
